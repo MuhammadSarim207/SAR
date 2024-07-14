@@ -1,0 +1,108 @@
+<DOCTYPE html>
+    <html lang="en">
+<head>
+    <title>forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style type="text/css">
+        *{
+            font-family:Oswald
+            ;
+        }
+        input.submit:hover{
+            background-color: lightgreen;
+            border-width: 2px 2px 2px 2px;
+           border-color: lightgreen lightsalmon lightcoral lightskyblue;
+        }
+        input.submit:active{
+            background-color: lightblue;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        h1{
+            text-shadow: 2px 2px 2px rgb(65, 65, 65);
+        }
+        .upload:hover{
+         background-color: lightcoral; 
+         border-width: 2px 2px 2px 2px;
+           border-color: lightgreen lightsalmon lightcoral lightskyblue;  
+        }
+        input.details:hover{
+            background-color: lightgray;
+            padding-inline: 20px;
+            border-width: 2px 2px 2px 2px;
+           border-color: lightgreen lightsalmon lightcoral lightskyblue;
+        }
+        a:active{
+            color: green;
+        }
+        .cb{
+            background-color: lightgoldenrodyellow;
+        }
+        .ta:hover{
+            background-color: lightgray ;
+           padding-bottom: 30px;
+           border-width: 2px 2px 2px 2px;
+           border-color: lightgreen lightsalmon lightcoral lightskyblue;
+        }
+    </style>
+    <form>
+    <p>
+        <h1>REGISTRATION FORM</h1>
+    </p>
+    <fieldset>
+        <legend>USER DETAILS</legend>
+        <label>Username<br />
+        <input class="details" type="text" name="username" required></label><br />
+        <label>Password:<br />
+        <input class="details" type="password" name="password" maxlength="10" required></label><br />
+        <label>Gmail:<br />
+        <input class="details" type="email" name="gmail" required /></label><br />
+        <label>Phone:<br />
+        <input class="details" type="text" name="mobile" /></label><br />
+        <label>Adress:<br />
+        <input class="details" type="text" name="telephone" /></label>
+        </fieldset>
+        <p>Gender:
+        <br /></p>
+        <label><input class="rb" type="radio" name="gender" value="male" checked /> MALE</label>
+        <label><input class="rb" type="radio" name="gender" value="female" /> FEMALE</label>
+        </p>
+        <p><label for="username">Birthday:</label>
+        <input type="date" name="birthday" />
+        </p>
+<p>Please select your favorite subject(s):
+    <br /></p><p>
+    <label><input type="checkbox" name="subject" 
+    value="chemistry" /> CHEMISTRY</label>
+    <label><input type="checkbox" name="subject"
+    value="biology" /> BIOLOGY</label>
+    <label><input type="checkbox" name="subject" 
+    value="physics" checked /> PHYSICS </label>
+    <label><input type="checkbox" name="subject"
+    value="computer" /> COMPUTER </label>
+</p>
+<p>On which device do you play games on?</p>
+<select class="cb" name="device" size="4" multiple="multiple">
+ <option value="mobile" selected>Mobile</option>
+ <option value="xbox">Xbox</option>
+ <option value="computer">Computer</option>
+ <option value="play statiopn"> Play station</option>
+ </select>
+ <p><p>Upload your file:</p>
+<p> <input type="file" name="user-file" /></p>
+ <button class="upload"><img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-file-upload-icon-image_1344393.jpg" alt="Upload" 
+    width="10" height="10" /> Upload</button>
+   </p> 
+<p>Write your reviews about our page: </p>
+<textarea class="ta" name="reviews" cols="30" rows="4" placeholder="Enter your reviews..." maxlength="50"></textarea>
+</p>
+<p>Submit your form:</p><p>
+<input class="submit" type="submit" value="SUBMIT"></p></form>
+<p><li><a href="front page.html">GO BACK TO THE PAGE</a></li></p>
+</body> 
